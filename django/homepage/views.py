@@ -10,4 +10,4 @@ def index(req):
 
 def book_by_id(req, book_id):
     boo = book.objects.get(pk=book_id)
-    return HttpResponse(f'Book: {boo.title}, published on: {boo.pub_date}')
+    return render(req, 'homepage.html', {'book': boo})
