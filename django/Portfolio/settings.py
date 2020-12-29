@@ -26,7 +26,7 @@ SECRET_KEY = 'e*ic13n_tkwgy&%v+cti(4_c-ufk++%3y*h&5)c@j@=!3^$te&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -57,7 +57,9 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'frontend/build')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +125,7 @@ USE_TZ = True
 PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
-print(STATIC_ROOT)
+
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'build/static'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 )

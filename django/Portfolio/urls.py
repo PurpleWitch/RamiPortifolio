@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+from django.views.generic import TemplateView
 
 # Serializers define the API representation.
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -35,7 +36,8 @@ router.register(r'users', UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include( router.urls )),
+    # path("", include( router.urls )),
     path('api-auth/', include('rest_framework.urls')),
-    path('test/', include('homepage.urls'))
+    path('test/', include('homepage.urls')),
+    re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
 ]
