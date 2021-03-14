@@ -32,7 +32,7 @@ You need [Pyhton3](https://www.python.org/downloads/) and [Node](https://nodejs.
    - Manages installed Django apps.
    - Serves the React Front-end template.
 
-2. [django/frontend/src/App.tsx](https://github.com/RamiOkkeh)
+2. [django/frontend/src/App.tsx](https://github.com/PurpleWitch/RamiPortifolio/blob/main/django/frontend/src/App.tsx)
 
    - Main react Component.
    - Handles the Routing for the Front-end side.
