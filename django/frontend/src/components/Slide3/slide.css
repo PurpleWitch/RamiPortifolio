@@ -1,0 +1,47 @@
+.slide3 {
+  padding-bottom: 400px;
+}
+
+.proContain {
+  width: 1200px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.sticky {
+  position: sticky;
+  display: inline;
+  top: 200px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  float: left;
+}
+
+.projects {
+  font-family: "Carme", sans-serif;
+  font-size: 50px;
+}
+
+.examples {
+  max-width: 750px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+@media only screen and (max-width: 982px) {
+  .sticky {
+    position: static;
+  }
+  .examples {
+    float: none;
+  }
+  .proContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,122 @@
+.icons {
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  width: 40px;
+  height: 230px;
+}
+
+.mediaCon {
+  display: flex;
+  margin: 10px;
+  flex-flow: wrap;
+}
+
+.iconsWrap {
+  height: 80px;
+  width: 70px;
+  text-align: center;
+  font-size: 10px;
+  margin: 0px 15px;
+}
+
+div.iconsWrap > a > * {
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 60px;
+}
+
+.footerCon {
+  height: 300px;
+}
+
+.touchCon {
+  padding: 10px;
+}
+
+.touch {
+  position: relative;
+  left: 8.33vw;
+  font-family: "Carme", sans-serif;
+  font-size: 70px;
+}
+
+.contactsCon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  height: 80%;
+  width: 85%;
+}
+
+.email {
+  float: left;
+  height: 100%;
+  width: 30%;
+  max-width: 30%;
+}
+
+.padding {
+  padding: 30px;
+}
+
+.send {
+  font-family: "Carme", sans-serif;
+  font-size: 17px;
+  border-bottom: 2px solid grey;
+  width: 70%;
+}
+
+.media {
+  float: left;
+  height: 100%;
+  width: 70%;
+  user-select: none;
+}
+.mediaText {
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .touch {
+    font-size: 30px;
+  }
+  .iconsWrap {
+    max-width: 50px;
+    max-height: 60px;
+  }
+  div.iconsWrap > a > * {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 30px;
+    width: 30px;
+  }
+  .send,
+  .media,
+  .myEmail {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .email,
+  .media {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .contactsCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+}

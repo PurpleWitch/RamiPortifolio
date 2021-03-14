@@ -1,0 +1,21 @@
+.header {
+  font-family: "Carme", sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 25px;
+  margin-left: -5px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header:hover {
+  color: rgb(118, 216, 255);
+  text-shadow: 0px 0px 5px rgb(118, 216, 255);
+}
+
+@media only screen and (max-width: 435px) {
+  .header {
+    font-size: 5px;
+    padding: 0px;
+    padding-top: 15px;
+  }
+}

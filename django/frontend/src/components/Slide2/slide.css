@@ -1,0 +1,22 @@
+.slide2 {
+  padding-bottom: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutCon {
+  max-width: 80%;
+}
+
+.about {
+  font-family: "Carme", sans-serif;
+  font-size: 30px;
+  margin-top: 140px;
+  max-width: 900px;
+}
+
+@media only screen and (max-width: 985px) {
+  .about {
+    font-size: 3vw;
+  }
+}

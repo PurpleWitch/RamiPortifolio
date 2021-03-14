@@ -1,0 +1,23 @@
+.skill {
+  height: 30px;
+  width: 30px;
+  margin: 4px;
+  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0, 0.35));
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.skillDispenser {
+  width: 90%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.centerfy {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -27,12 +27,12 @@ You need [Pyhton3](https://www.python.org/downloads/) and [Node](https://nodejs.
 
 ## Key Files
 
-1. [django/Portfolio/settings.py](https://github.com/RamiOkkeh/OnlineSchoolSystem/blob/master/Backend/core/settings.py)
+1. [django/Portfolio/settings.py](https://github.com/PurpleWitch/RamiPortifolio/blob/main/django/Portfolio/settings.py)
 
    - Manages installed Django apps.
    - Serves the React Front-end template.
 
-2. [django/frontend/src/App.tsx](https://github.com/RamiOkkeh/OnlineSchoolSystem/blob/master/frontend/src/App.tsx)
+2. [django/frontend/src/App.tsx](https://github.com/RamiOkkeh)
 
    - Main react Component.
    - Handles the Routing for the Front-end side.
